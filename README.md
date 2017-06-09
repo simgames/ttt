@@ -3,5 +3,6 @@ A tic tac toe game
 
 
 
-
-<H1>What are you trying to do here?</H1>
+# FAQs
+## What are you trying to do here?
+Nothing
