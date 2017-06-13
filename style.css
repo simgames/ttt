@@ -3,4 +3,4 @@
 }
 body {padding:0;margin:0}
 #board * {border: 1px solid}
-#board div * {width:33%;height:33vh}
+#board div * {width:33%;height:33vh;display:inline-block}
