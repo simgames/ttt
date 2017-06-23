@@ -2,5 +2,6 @@
     width:100%;height:100vh
 }
 body {padding:0;margin:0}
+#board div {white-space: nowrap}
 #board * {border: 1px solid;margin:0;padding:0}
 #board div * {width:33%;height:33vh;display:inline-block}
