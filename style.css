@@ -4,12 +4,13 @@
     background: #EEE;
     width: 85%;
     min-width: 500px;
+    height: 70vh;
     font-family: sans-serif;
     text-align:center;
 }
 body {padding:0;margin:0}
 #board td {
-    height: 166px;
+    height: 33%;
     border-collapse: collapse;
     width: 33%;
     border-bottom: 2px solid;
