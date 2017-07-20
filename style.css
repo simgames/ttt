@@ -10,8 +10,13 @@
 body {padding:0;margin:0}
 #board td {
     height: 50px;
-    border: 1px solid;
     border-spacing:0;
     border-collapse: collapse;
     width: 33%;
+}
+#board tr {
+    border-bottom: 1px solid;
+}
+#board tr:last-child {
+    border-bottom: 0;
 }
