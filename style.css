@@ -2,7 +2,8 @@
     margin: auto;
     border: 0;
     background: #EEE;
-    width: 500px;
+    width: 85%;
+    min-width: 500px;
     font-family: sans-serif;
     text-align:center;
 }
