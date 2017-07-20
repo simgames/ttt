@@ -2,14 +2,13 @@
     margin: auto;
     border: 0;
     background: #EEE;
-    width: 60%;
-    min-width: 400px;
+    width: 500px;
     font-family: sans-serif;
     text-align:center;
 }
 body {padding:0;margin:0}
 #board td {
-    height: 50px;
+    height: 166px;
     border-collapse: collapse;
     width: 33%;
     border-bottom: 2px solid;
