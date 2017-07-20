@@ -4,4 +4,7 @@
     width: 60%;
 }
 body {padding:0;margin:0}
-#board td {border: 1px solid}
+#board td {
+    border: 1px solid
+    height: 50px;
+}
