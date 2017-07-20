@@ -15,7 +15,7 @@ body {padding:0;margin:0}
     width: 33%;
 }
 #board tr {
-    border-bottom: 1px solid;
+    border-bottom: 5px solid;
 }
 #board tr:last-child {
     border-bottom: 0;
