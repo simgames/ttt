@@ -13,7 +13,11 @@ body {padding:0;margin:0}
     border-collapse: collapse;
     width: 33%;
     border-bottom: 2px solid;
+    border-right: 2px solid;
 }
 #board tr:last-child td {
     border-bottom: 0;
+}
+#board td:last-child {
+    border-right: 0;
 }
