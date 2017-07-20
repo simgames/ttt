@@ -8,4 +8,6 @@
 body {padding:0;margin:0}
 #board td {
     height: 50px;
+    border: 1px solid;
+    border-spacing:0;
 }
