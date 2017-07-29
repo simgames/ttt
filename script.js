@@ -14,7 +14,24 @@ function computerTurn()
 var result = Math.floor(Math.random() * 9 + 1)
 if(result == 1)
 {
-    if(document.getElementById('r' + 1 'c' + 1).innerHTML == "")
+  var box = document.getElementById("r1c1")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  }
+    if(result == 2)
+  {
+    var box = document.getElementById("r2c1")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  }
+  if(result == 3)
+  {
+var box = document.getElementById("r3c1")
+    if(box.innerHTML == "")
     {
 box.innerHTML = "O";
     }
