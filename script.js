@@ -4,6 +4,7 @@ for(let i = 1; i <= 3; i++) {
       if(this.innerHTML == "")
       {
       this.innerHTML = 'X';
+        checkWinner()
         computerTurn()
       }
     }
@@ -18,6 +19,7 @@ if(result == 1)
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner();
     }
   else
   {
@@ -30,6 +32,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner();
     }
     else
     {
@@ -42,6 +45,7 @@ var box = document.getElementById("r3c1")
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner();
     }
     else
     {
@@ -54,6 +58,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner();
     }
   else
   {
@@ -66,6 +71,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner()
     }
   else
   {
@@ -78,6 +84,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner()
     }
   else
   {
@@ -90,6 +97,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner()
     }
   else
   {
@@ -102,6 +110,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner()
     }
   else
   {
@@ -114,6 +123,7 @@ box.innerHTML = "O";
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+      checkWinner();
     }
   else
   {
