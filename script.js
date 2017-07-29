@@ -20,4 +20,20 @@ var box = document.getElementById('r' + 1 'c' + 1)
 box.innerHTML = "O";
     }
   }
+  if(result == 2)
+  {
+    var box = document.getElementById('r' + 2 'c' + 1)
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  }
+  if(result == 3)
+  {
+var box = document.getElementById('r' + 3 'c' + 1)
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  }
 }
