@@ -7,6 +7,7 @@ for(let i = 1; i <= 3; i++) {
       }
       else
       {
+        console.log(this.innerHTML);
       this.innerHTML = 'O';
       }
     }
