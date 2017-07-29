@@ -138,10 +138,9 @@ for(i=0;i<8;i++)
 {
 for(j=0;i<3;j++)
 {
-  var r = 0;
-  console.log(j);
-  console.log(r);
-if(document.getElementById("r" + j + "c" + r).innerHTML == "X" || document.getElementById("r" + j + "c" + r).innerHTML == "O")
+  var e = j + 1
+  var r = 1;
+if(document.getElementById("r" + e + "c" + r).innerHTML == "X" || document.getElementById("r" + e + "c" + r).innerHTML == "O")
    {
    console.log("Someone won")
 }
