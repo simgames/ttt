@@ -4,11 +4,12 @@ for(let i = 1; i <= 3; i++) {
       if(this.innerHTML == "")
       {
       this.innerHTML = 'X';
-      }
-      else
-      {
-      this.innerHTML = 'O';
+        computerTurn()
       }
     }
   }
+}
+function computerTurn()
+{
+
 }
