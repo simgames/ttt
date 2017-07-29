@@ -11,5 +11,13 @@ for(let i = 1; i <= 3; i++) {
 }
 function computerTurn()
 {
-
+var result = Math.floor(Math.random() * 9 + 1)
+if(result == 1)
+{
+var box = document.getElementByid('r' + 1 'c' + 1)
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  }
 }
