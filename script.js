@@ -48,5 +48,77 @@ box.innerHTML = "O";
      computerTurn() 
     }
   }
+  if(result == 4)
+{
+  var box = document.getElementById("r1c2")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  else
+  {
+   computerTurn() 
+  }
+  }
+  if(result == 5)
+{
+  var box = document.getElementById("r2c2")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  else
+  {
+   computerTurn() 
+  }
+  }
+  if(result == 6)
+{
+  var box = document.getElementById("r3c2")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  else
+  {
+   computerTurn() 
+  }
+  }
+  if(result == 7)
+{
+  var box = document.getElementById("r1c3")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  else
+  {
+   computerTurn() 
+  }
+  }
+  if(result == 8)
+{
+  var box = document.getElementById("r2c3")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  else
+  {
+   computerTurn() 
+  }
+  }
+  if(result == 9)
+{
+  var box = document.getElementById("r3c3")
+    if(box.innerHTML == "")
+    {
+box.innerHTML = "O";
+    }
+  else
+  {
+   computerTurn() 
+  }
+  }
 
 }
