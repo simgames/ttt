@@ -139,7 +139,9 @@ for(i=0;i<8;i++)
 for(j=0;i<3;j++)
 {
   var r = 0;
-if(document.getElementById('r' + j + 'c' + r).innerHTML == "X" || document.getElementById("r" + j + "c" + r).innerHTML == "O")
+  console.log(j);
+  console.log(r);
+if(document.getElementById("r" + j + "c" + r).innerHTML == "X" || document.getElementById("r" + j + "c" + r).innerHTML == "O")
    {
    console.log("Someone won")
 }
