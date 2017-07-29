@@ -19,6 +19,10 @@ if(result == 1)
     {
 box.innerHTML = "O";
     }
+  else
+  {
+   computerTurn() 
+  }
   }
     if(result == 2)
   {
@@ -27,6 +31,10 @@ box.innerHTML = "O";
     {
 box.innerHTML = "O";
     }
+    else
+    {
+     computerTurn()
+    }
   }
   if(result == 3)
   {
@@ -34,6 +42,10 @@ var box = document.getElementById("r3c1")
     if(box.innerHTML == "")
     {
 box.innerHTML = "O";
+    }
+    else
+    {
+     computerTurn() 
     }
   }
 
