@@ -137,7 +137,8 @@ function checkWinner()
 for(i=0;i<3;i++)
 {
   var r = 1;
-if(document.getElementById("r" + i + 1 + "c" + r).innerHTML == "X" || document.getElementById("r" + 1 + "c" + r).innerHTML == "O")
+  console.log(i + 1);
+if(document.getElementById("r" + 1 + "c" + r).innerHTML == "X" || document.getElementById("r" + 1 + "c" + r).innerHTML == "O")
    {
    console.log("Someone won")
 }
