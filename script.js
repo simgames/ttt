@@ -134,13 +134,21 @@ box.innerHTML = "O";
 }
 function checkWinner()
 {
-for(i=1;i<4;i++)
+  var letterx = 0
+  var lettery = 1
+  for(i=1;i<4;i++)
 {
   var r = 1;
-  console.log(i)
 if(document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + 1 + "c" + r).innerHTML == "O")
    {
-   console.log("Someone won")
+   if(document.getElementById("r" + i + "c" + r).innerHTML == "X")
+   {
+   letterx += 1
+     if(letterx == 3)
+     {
+console.log("X won!!!");
+     }
+   }
 }
 }
 }
