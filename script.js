@@ -139,7 +139,7 @@ function checkWinner()
   for(i=1;i<4;i++)
 {
   var r = 1;
-if(document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + 1 + "c" + r).innerHTML == "O")
+if(document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
    {
    if(document.getElementById("r" + i + "c" + r).innerHTML == "X")
    {
