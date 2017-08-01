@@ -158,6 +158,28 @@ function checkWinner()
                 }
             }
         }
+        else
+        {
+            if(document.getElementById("r" + r + "c" + i).innerHTML == "X" || document.getElementById("r" + r + "c" + i).innerHTML == "O")
+            {
+                 if (document.getElementById("r" + i + "c" + r).innerHTML == "X")
+            {
+                letterx += 1
+                if (letterx == 3)
+                {
+                    console.log("X won!!!");
+                }
+            }
+            else
+            {
+                lettero += 1
+                if (lettero == 3)
+                {
+                    console.log("O won!!!");
+                }
+            }
+            }
+        }
     }
 }
 
