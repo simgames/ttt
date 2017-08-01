@@ -1,162 +1,163 @@
-for(let i = 1; i <= 3; i++) {
-  for(let j = 1; j <= 3; j++) {
-    document.getElementById('r' + i + 'c' + j).onclick = function() {
-      if(this.innerHTML == "")
-      {
-      this.innerHTML = 'X';
-        checkWinner()
-        computerTurn()
-      }
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        document.getElementById('r' + i + 'c' + j).onclick = function() {
+            if (this.innerHTML == "")
+            {
+                this.innerHTML = 'X';
+                checkWinner()
+                computerTurn()
+            }
+        }
     }
-  }
 }
 function computerTurn()
 {
-var result = Math.floor(Math.random() * 9 + 1)
-if(result == 1)
-{
-  var box = document.getElementById("r1c1")
-    if(box.innerHTML == "")
+    var result = Math.floor(Math.random() * 9 + 1)
+    if (result == 1)
     {
-box.innerHTML = "O";
-      checkWinner();
+        var box = document.getElementById("r1c1")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner();
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  else
-  {
-   computerTurn() 
-  }
-  }
-    if(result == 2)
-  {
-    var box = document.getElementById("r2c1")
-    if(box.innerHTML == "")
+    if (result == 2)
     {
-box.innerHTML = "O";
-      checkWinner();
+        var box = document.getElementById("r2c1")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner();
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-    else
+    if (result == 3)
     {
-     computerTurn()
+        var box = document.getElementById("r3c1")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner();
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  }
-  if(result == 3)
-  {
-var box = document.getElementById("r3c1")
-    if(box.innerHTML == "")
+    if (result == 4)
     {
-box.innerHTML = "O";
-      checkWinner();
+        var box = document.getElementById("r1c2")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner();
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-    else
+    if (result == 5)
     {
-     computerTurn() 
+        var box = document.getElementById("r2c2")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner()
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  }
-  if(result == 4)
-{
-  var box = document.getElementById("r1c2")
-    if(box.innerHTML == "")
+    if (result == 6)
     {
-box.innerHTML = "O";
-      checkWinner();
+        var box = document.getElementById("r3c2")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner()
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  else
-  {
-   computerTurn() 
-  }
-  }
-  if(result == 5)
-{
-  var box = document.getElementById("r2c2")
-    if(box.innerHTML == "")
+    if (result == 7)
     {
-box.innerHTML = "O";
-      checkWinner()
+        var box = document.getElementById("r1c3")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner()
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  else
-  {
-   computerTurn() 
-  }
-  }
-  if(result == 6)
-{
-  var box = document.getElementById("r3c2")
-    if(box.innerHTML == "")
+    if (result == 8)
     {
-box.innerHTML = "O";
-      checkWinner()
+        var box = document.getElementById("r2c3")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner()
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  else
-  {
-   computerTurn() 
-  }
-  }
-  if(result == 7)
-{
-  var box = document.getElementById("r1c3")
-    if(box.innerHTML == "")
+    if (result == 9)
     {
-box.innerHTML = "O";
-      checkWinner()
+        var box = document.getElementById("r3c3")
+        if (box.innerHTML == "")
+        {
+            box.innerHTML = "O";
+            checkWinner();
+        }
+        else
+        {
+            computerTurn()
+        }
     }
-  else
-  {
-   computerTurn() 
-  }
-  }
-  if(result == 8)
-{
-  var box = document.getElementById("r2c3")
-    if(box.innerHTML == "")
-    {
-box.innerHTML = "O";
-      checkWinner()
-    }
-  else
-  {
-   computerTurn() 
-  }
-  }
-  if(result == 9)
-{
-  var box = document.getElementById("r3c3")
-    if(box.innerHTML == "")
-    {
-box.innerHTML = "O";
-      checkWinner();
-    }
-  else
-  {
-   computerTurn() 
-  }
-  }
 
 }
 function checkWinner()
 {
-  var letterx = 0;
-  var lettero = 0;
-  for(i=1;i<4;i++)
-{
-  var r = 1;
-if(document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
-   {
-   if(document.getElementById("r" + i + "c" + r).innerHTML == "X")
-   {
-   letterx += 1
-     if(letterx == 3)
-     {
-console.log("X won!!!");
-     }
-   }
-   else
-   {
-    lettero += 1
-    if(lettero == 3)
+    var letterx = 0;
+    var lettero = 0;
+    for (i = 1; i < 4; i++)
     {
-     console.log("O won!!!"); 
+        var r = 1;
+        if (document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
+        {
+            if (document.getElementById("r" + i + "c" + r).innerHTML == "X")
+            {
+                letterx += 1
+                if (letterx == 3)
+                {
+                    console.log("X won!!!");
+                }
+            }
+            else
+            {
+                lettero += 1
+                if (lettero == 3)
+                {
+                    console.log("O won!!!");
+                }
+            }
+        }
     }
-   }
 }
-}
-}
+
