@@ -134,7 +134,7 @@ box.innerHTML = "O";
 }
 function checkWinner()
 {
-for(i=1;i<3;i++)
+for(i=1;i<4;i++)
 {
   var r = 1;
   console.log(i)
