@@ -138,8 +138,6 @@ function checkWinner()
     var letteror1 = 0;
     var letterxc1 = 0;
     var letteroc1 = 0;
-    for(j = 1; j < 4; j++)
-    {
     for (i = 1; i < 4; i++)
     {
         var r = 1;
@@ -162,9 +160,9 @@ function checkWinner()
                 }
             }
         }
-        if (document.getElementById("r" + r + "c" + i).innerHTML == "X" || document.getElementById("r" + r + "c" + i).innerHTML == "O")
-        {
-            if (document.getElementById("r" + r + "c" + i).innerHTML == "X")
+            if(document.getElementById("r" + r + "c" + i).innerHTML == "X" || document.getElementById("r" + r + "c" + i).innerHTML == "O")
+            {
+                 if (document.getElementById("r" + r + "c" + i).innerHTML == "X")
             {
                 letterxc1 += 1
                 if (letterxc1 == 3)
@@ -182,6 +180,4 @@ function checkWinner()
             }
         }
     }
-        r += 1
-  }
 }
