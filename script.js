@@ -165,7 +165,6 @@ function checkWinner()
                  if (document.getElementById("r" + r + "c" + i).innerHTML == "X")
             {
                 letterxc1 += 1
-                console.log(
                 if (letterxc1 == 3)
                 {
                     console.log("X won!!!");
