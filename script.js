@@ -152,7 +152,7 @@ console.log("X won!!!");
    else
    {
     lettero += 1
-    if(letterx == 3)
+    if(lettero == 3)
     {
      console.log("O won!!!"); 
     }
