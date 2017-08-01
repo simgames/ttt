@@ -134,8 +134,8 @@ box.innerHTML = "O";
 }
 function checkWinner()
 {
-  var letterx = 0
-  var lettery = 1
+  var letterx = 0;
+  var lettero = 0;
   for(i=1;i<4;i++)
 {
   var r = 1;
@@ -148,6 +148,14 @@ if(document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getEl
      {
 console.log("X won!!!");
      }
+   }
+   else
+   {
+    lettero += 1
+    if(letterx == 3)
+    {
+     console.log("O won!!!"); 
+    }
    }
 }
 }
