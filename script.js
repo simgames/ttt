@@ -160,13 +160,12 @@ function checkWinner()
                 }
             }
         }
-        else
-        {
             if(document.getElementById("r" + r + "c" + i).innerHTML == "X" || document.getElementById("r" + r + "c" + i).innerHTML == "O")
             {
                  if (document.getElementById("r" + r + "c" + i).innerHTML == "X")
             {
                 letterxc1 += 1
+                console.log(
                 if (letterxc1 == 3)
                 {
                     console.log("X won!!!");
@@ -180,8 +179,6 @@ function checkWinner()
                     console.log("O won!!!");
                 }
             }
-            }
         }
     }
 }
-
