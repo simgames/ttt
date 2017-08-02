@@ -132,7 +132,8 @@ function computerTurn()
     }
 
 }
-function checkWinner()
+var r = 1
+function checkWinner(r)
 {
     var letterxr1 = 0;
     var letteror1 = 0;
@@ -140,7 +141,7 @@ function checkWinner()
     var letteroc1 = 0;
     for (i = 1; i < 4; i++)
     {
-        var r = 1;
+        console.log(r);
         if (document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
         {
             if (document.getElementById("r" + i + "c" + r).innerHTML == "X")
