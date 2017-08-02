@@ -137,7 +137,6 @@ function computerTurn()
 }
 function checkWinner()
 {  
-    console.log(r);
     var letterxr1 = 0;
     var letteror1 = 0;
     var letterxc1 = 0;
@@ -215,6 +214,20 @@ function checkWinner()
             }
         }
      } 
+   if(document.getElementById("r" + 3 + "c" + 1).innerHTML == "X" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "X" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "X" || document.getElementById("r" + 3 + "c" + 1).innerHTML == "O" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "O" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "O")
+   {
+       if(document.getElementById("r" + 3 + "c" + 1).innerHTML == "X")
+       {
+           winner = "X"
+           console.log("X won!!!")
+       }
+       else
+       {
+           winner = "O"
+           console.log("O won!!!");
+       }
+   }
+       
     if(winner == "")
         {
             if(r != 3)
