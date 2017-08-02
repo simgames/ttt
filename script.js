@@ -248,14 +248,13 @@ alert("O won!!!");
         } 
     else
     {
-
+l = 1
 clearBoard()
         winner = ""
     }
 }
 function clearBoard()
 {
-    l = 1;
 for(i=1; i<4; i++)
 {
 document.getElementById("r" + i + "c" + l).innerHTML = ""
