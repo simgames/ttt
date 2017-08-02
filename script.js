@@ -257,7 +257,7 @@ function clearBoard()
 {
 for(i=1; i<4; i++)
 {
-document.getElementById("r" + i + "r" + l).innerHTML = ""
+document.getElementById("r" + i + "c" + l).innerHTML = ""
 }
         if(l != 3)
         {
