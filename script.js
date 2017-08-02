@@ -8,6 +8,10 @@ for (let i = 1; i <= 3; i++) {
                 this.innerHTML = 'X';
                 r = 1
                 checkWinner()
+                  if(r == 3)
+                   {
+                    computerTurn()
+                   }
                 
             }
         }
@@ -252,10 +256,7 @@ l = 1
 clearBoard()
         winner = ""
     }
-    if(r == 3)
-    {
-computerTurn()
-    }
+  
 }
 function clearBoard()
 {
