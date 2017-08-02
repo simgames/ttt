@@ -188,8 +188,11 @@ function checkWinner()
         }
         if(winner == "")
         {
-r += 1
-checkWinner()
+            if(r != 3)
+            {
+                r += 1
+                checkWinner()
+            }
         }
     }
     
