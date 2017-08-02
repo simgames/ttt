@@ -9,6 +9,7 @@ for (let i = 1; i <= 3; i++) {
                 this.innerHTML = 'X';
                 r = 1
                 checkWinner()
+                h += 1
                   if(r == 3)
                    {
                     computerTurn()
@@ -139,7 +140,7 @@ function computerTurn()
             computerTurn()
         }
     }
-
+h += 1
 }
 function checkWinner()
 {  
@@ -213,10 +214,7 @@ function checkWinner()
                 }
             }
         }
-        if (document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
-        {
-            h ++
-        }
+        
      } 
    if(document.getElementById("r" + 3 + "c" + 1).innerHTML == "X" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "X" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "X" || document.getElementById("r" + 3 + "c" + 1).innerHTML == "O" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "O" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "O")
    {
