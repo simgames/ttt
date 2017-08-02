@@ -255,12 +255,17 @@ alert("O won!!!");
             }
             else
             {
-                console.log(h);
+             if(h == 9)
+             {
+                 alert("Tie game")
+                 clearBoard()
+             }
             }
         } 
     else
     {
 l = 1
+h = 0;
 clearBoard()
         winner = ""
     }
