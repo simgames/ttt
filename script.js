@@ -1,5 +1,6 @@
 var r = 1
 var l = 1
+var h = 0
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
@@ -161,7 +162,6 @@ function checkWinner()
                 letterxr1 += 1
                 if (letterxr1 == 3)
                 {
-                    console.log("X won!!!");
                     winner = "X"
                 }
             }
@@ -170,7 +170,6 @@ function checkWinner()
                 letteror1 += 1
                 if (letteror1 == 3)
                 {
-                    console.log("O won!!!");
                     winner = "O"
                 }
             }
@@ -182,7 +181,6 @@ function checkWinner()
                 letterxc1 += 1
                 if (letterxc1 == 3)
                 {
-                    console.log("X won!!!");
                     winner = "X"
                 }
             }
@@ -191,7 +189,6 @@ function checkWinner()
                 letteroc1 += 1
                 if (letteroc1 == 3)
                 {
-                    console.log("O won!!!");
                     winner = "O"
                 }
             }
@@ -204,7 +201,6 @@ function checkWinner()
                 letterxd1 += 1
                 if (letterxd1 == 3)
                 {
-                    console.log("X won!!!");
                     winner = "X"
                 }
             }
@@ -213,10 +209,13 @@ function checkWinner()
                 letterod1 += 1
                 if (letterod1 == 3)
                 {
-                    console.log("O won!!!");
                     winner = "O"
                 }
             }
+        }
+        if (document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
+        {
+            h ++
         }
      } 
    if(document.getElementById("r" + 3 + "c" + 1).innerHTML == "X" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "X" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "X" || document.getElementById("r" + 3 + "c" + 1).innerHTML == "O" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "O" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "O")
@@ -224,15 +223,14 @@ function checkWinner()
        if(document.getElementById("r" + 3 + "c" + 1).innerHTML == "X")
        {
            winner = "X"
-           console.log("X won!!!")
        }
        else
        {
            winner = "O"
-           console.log("O won!!!");
        }
    }
        
+        
    
     if(winner == "X")
     {
@@ -248,6 +246,10 @@ alert("O won!!!");
             {
                 r += 1
                 checkWinner()
+            }
+            else
+            {
+                console.log(h);
             }
         } 
     else
