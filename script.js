@@ -142,6 +142,10 @@ function checkWinner()
     var letteror1 = 0;
     var letterxc1 = 0;
     var letteroc1 = 0;
+    var letterxd1 = 0;
+    var letterod1 = 0;
+    var letterxd2 = 0;
+    var letterod2 = 0;
     var winner = ""
     for (i = 1; i < 4; i++)
     {
@@ -182,6 +186,28 @@ function checkWinner()
             {
                 letteroc1 += 1
                 if (letteroc1 == 3)
+                {
+                    console.log("O won!!!");
+                    winner = "O"
+                }
+            }
+        }
+        
+        if(document.getElementById("r" + i + "c" + i).innerHTML == "X" || document.getElementById("r" + i + "c" + i).innerHTML == "O")
+        {
+            if (document.getElementById("r" + i + "c" + i).innerHTML == "X")
+            {
+                letterxd1 += 1
+                if (letterxd1 == 3)
+                {
+                    console.log("X won!!!");
+                    winner = "X"
+                }
+            }
+            else
+            {
+                letterod1 += 1
+                if (letterod1 == 3)
                 {
                     console.log("O won!!!");
                     winner = "O"
