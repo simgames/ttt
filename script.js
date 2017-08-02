@@ -8,8 +8,8 @@ for (let i = 1; i <= 3; i++) {
             {
                 this.innerHTML = 'X';
                 r = 1
-                checkWinner()
                 h += 1
+                checkWinner()
                   if(r == 3)
                    {
                     computerTurn()
@@ -29,6 +29,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner();
         }
         else
@@ -42,6 +43,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner();
         }
         else
@@ -55,6 +57,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner();
         }
         else
@@ -68,6 +71,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner();
         }
         else
@@ -81,6 +85,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner()
         }
         else
@@ -94,6 +99,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner()
         }
         else
@@ -107,6 +113,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner()
         }
         else
@@ -120,6 +127,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner()
         }
         else
@@ -133,6 +141,7 @@ function computerTurn()
         if (box.innerHTML == "")
         {
             box.innerHTML = "O";
+            h += 1
             checkWinner();
         }
         else
@@ -140,7 +149,6 @@ function computerTurn()
             computerTurn()
         }
     }
-h += 1
 }
 function checkWinner()
 {  
