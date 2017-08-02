@@ -1,4 +1,5 @@
 var r = 1
+var l = 1
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
@@ -228,14 +229,7 @@ function checkWinner()
        }
    }
        
-    if(winner == "")
-        {
-            if(r != 3)
-            {
-                r += 1
-                checkWinner()
-            }
-        } 
+   
     if(winner == "X")
     {
 alert("X won!!!")
@@ -244,4 +238,31 @@ alert("X won!!!")
     {
 alert("O won!!!");
     }
+     if(winner == "")
+        {
+            if(r != 3)
+            {
+                r += 1
+                checkWinner()
+            }
+        } 
+    else
+    {
+
+clearBoard()
+        winner = ""
+    }
+}
+function clearBoard()
+{
+for(i=1; i<4; i++)
+{
+document.getElementById("r" + i + "r" + l).innerHTML = ""
+}
+        if(i != 3)
+        {
+        i += 1
+        clearBoard()
+        }
+    winner
 }
