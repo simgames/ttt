@@ -188,14 +188,13 @@ function checkWinner()
                 }
             }
         }
-        if(winner == "")
+     } 
+    if(winner == "")
         {
             if(r != 3)
             {
                 r += 1
                 checkWinner()
             }
-        }
-    }
-    
+        } 
 }
