@@ -1,3 +1,5 @@
+
+var r = 1
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
@@ -132,7 +134,6 @@ function computerTurn()
     }
 
 }
-var r = 1
 function checkWinner()
 {  
     var letterxr1 = 0;
