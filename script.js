@@ -8,7 +8,7 @@ for (let i = 1; i <= 3; i++) {
                 this.innerHTML = 'X';
                 r = 1
                 checkWinner()
-                computerTurn()
+                
             }
         }
     }
@@ -244,6 +244,10 @@ alert("O won!!!");
             {
                 r += 1
                 checkWinner()
+            }
+            else
+            {
+                computerTurn()
             }
         } 
     else
