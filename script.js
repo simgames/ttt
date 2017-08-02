@@ -259,10 +259,9 @@ for(i=1; i<4; i++)
 {
 document.getElementById("r" + i + "r" + l).innerHTML = ""
 }
-        if(i != 3)
+        if(l != 3)
         {
-        i += 1
+        l += 1
         clearBoard()
         }
-    winner
 }
