@@ -1,4 +1,3 @@
-
 var r = 1
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
@@ -140,6 +139,7 @@ function checkWinner()
     var letteror1 = 0;
     var letterxc1 = 0;
     var letteroc1 = 0;
+    var winner = ""
     for (i = 1; i < 4; i++)
     {
        
@@ -151,6 +151,7 @@ function checkWinner()
                 if (letterxr1 == 3)
                 {
                     console.log("X won!!!");
+                    winner = "X"
                 }
             }
             else
@@ -159,6 +160,7 @@ function checkWinner()
                 if (letteror1 == 3)
                 {
                     console.log("O won!!!");
+                    winner = "O"
                 }
             }
         }
@@ -170,6 +172,7 @@ function checkWinner()
                 if (letterxc1 == 3)
                 {
                     console.log("X won!!!");
+                    winner = "X"
                 }
             }
             else
@@ -178,8 +181,11 @@ function checkWinner()
                 if (letteroc1 == 3)
                 {
                     console.log("O won!!!");
+                    winner = "O"
                 }
             }
         }
+        console.log(winner);
     }
+    
 }
