@@ -245,16 +245,16 @@ alert("O won!!!");
                 r += 1
                 checkWinner()
             }
-            else
-            {
-                computerTurn()
-            }
         } 
     else
     {
 l = 1
 clearBoard()
         winner = ""
+    }
+    if(r == 3)
+    {
+computerTurn()
     }
 }
 function clearBoard()
