@@ -135,6 +135,7 @@ function computerTurn()
 }
 function checkWinner()
 {  
+    console.log(r);
     var letterxr1 = 0;
     var letteror1 = 0;
     var letterxc1 = 0;
@@ -185,7 +186,11 @@ function checkWinner()
                 }
             }
         }
-        console.log(winner);
+        if(winner == "")
+        {
+r += 1
+checkWinner()
+        }
     }
     
 }
