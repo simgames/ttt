@@ -193,6 +193,10 @@ function checkWinner()
                 r += 1
                 checkWinner()
             }
+            else
+            {
+                r = 1
+            }
         }
     }
     
