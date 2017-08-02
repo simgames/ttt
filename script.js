@@ -236,4 +236,12 @@ function checkWinner()
                 checkWinner()
             }
         } 
+    if(winner == "X")
+    {
+alert("X won!!!")
+    }
+    if(winner == "O")
+    {
+alert("O won!!!");
+    }
 }
