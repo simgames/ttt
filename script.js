@@ -5,6 +5,7 @@ for (let i = 1; i <= 3; i++) {
             if (this.innerHTML == "")
             {
                 this.innerHTML = 'X';
+                r = 1
                 checkWinner()
                 computerTurn()
             }
@@ -12,7 +13,8 @@ for (let i = 1; i <= 3; i++) {
     }
 }
 function computerTurn()
-{
+{ 
+    r = 1
     var result = Math.floor(Math.random() * 9 + 1)
     if (result == 1)
     {
@@ -192,10 +194,6 @@ function checkWinner()
             {
                 r += 1
                 checkWinner()
-            }
-            else
-            {
-                r = 1
             }
         }
     }
