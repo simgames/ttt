@@ -258,6 +258,8 @@ alert("O won!!!");
              if(h == 9)
              {
                  alert("Tie game")
+                 l = 1;
+                 h = 0;
                  clearBoard()
              }
             }
