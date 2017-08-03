@@ -260,7 +260,9 @@ alert("O won!!!");
                  alert("Tie game")
                  l = 1;
                  h = 0;
+                 r = 1;
                  clearBoard()
+                 winner = ""
              }
             }
         } 
@@ -268,6 +270,7 @@ alert("O won!!!");
     {
 l = 1
 h = 0;
+r = 1
 clearBoard()
         winner = ""
     }
