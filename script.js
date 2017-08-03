@@ -261,22 +261,10 @@ document.getElementById('id01').style.display='block'
              {
                  document.getElementById('id01').style.display='block'
         document.getElementById("title").innerHTML = "Tie game";
-                 l = 1;
-                 h = 0;
-                 r = 1;
-                 clearBoard()
-                 winner = ""
+                 
              }
             }
         } 
-    else
-    {
-l = 1
-h = 0;
-r = 1
-clearBoard()
-        winner = ""
-    }
   
 }
 function clearBoard()
@@ -290,4 +278,13 @@ document.getElementById("r" + i + "c" + l).innerHTML = ""
         l += 1
         clearBoard()
         }
+}
+function playAgain()
+{
+l = 1;
+h = 0;
+r = 1;
+clearBoard()
+winner = ""
+document.getElementById('id01').style.display='block'
 }
