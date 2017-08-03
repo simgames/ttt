@@ -42,12 +42,6 @@ button:hover {
     opacity: 0.8;
 }
 /* Extra styles for the cancel button */
-.signup {
-    width: auto;
-    padding: 10px 20px;
-    background-color: #0062e2;
-    font-size: 125%
-}
 /* Center the image and position the close button */
 .container {
     padding: 16px;
@@ -98,9 +92,6 @@ span.psw {
        display: block;
        float: none;
     }
-    .cancelbtn {
-       width: 100%;
-    }
 }
 </style>
 
@@ -113,23 +104,12 @@ span.psw {
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
 
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" id="email" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+    <div class="container"><
+        <b id="title"></b>
+      <button type="button" onclick="toggleSignIn()" id="enter">Play Again</button><span><button type="button" onclick="">Multiplayer</button></span>
       
-      <label><b id="namer"></b></label>
-      <span id="namej"></span>
-
-      <button type="button" onclick="toggleSignIn()" id="enter">Login</button>
-      <input type="checkbox" checked="checked" id="remember"> Remember me
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="setUp()" class="signup" id="signuplogin">Sign Up</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
 
