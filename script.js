@@ -241,6 +241,7 @@ function checkWinner()
     if(winner == "X")
     {
 alert("X won!!!")
+         document.getElementById('id01').style.display='block'
     }
     if(winner == "O")
     {
