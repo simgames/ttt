@@ -290,6 +290,6 @@ document.getElementById('id01').style.display=''
 }
 window.onload = function()
 {
-document.getElementById("playComputer").innerHTML = "Play Computer"
+document.getElementById("enter").innerHTML = "Play Computer"
 document.getElementById('id01').style.display='block'
 }
