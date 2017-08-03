@@ -1,3 +1,5 @@
+
+
 #board {
     margin-top: 56px;
     margin: auto;
@@ -25,9 +27,9 @@ body {padding:0;margin:0}
 #board td:last-child {
     border-right: 0;
 }
-/* Set a style for all buttons */
+/* Set a style for buttons */
 button {
-    background-color: #0097a7;
+    background-color: #ffc107;
     color: white;
     padding: 8px 12px;
     margin: 8px;
