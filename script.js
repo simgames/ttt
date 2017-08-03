@@ -240,12 +240,13 @@ function checkWinner()
    
     if(winner == "X")
     {
-alert("X won!!!")
          document.getElementById('id01').style.display='block'
+        document.getElementById("title").innerHTML = "X won!!!";
     }
     if(winner == "O")
     {
-alert("O won!!!");
+document.getElementById('id01').style.display='block'
+        document.getElementById("title").innerHTML = "O won!!!";
     }
      if(winner == "")
         {
@@ -258,7 +259,8 @@ alert("O won!!!");
             {
              if(h == 9)
              {
-                 alert("Tie game")
+                 document.getElementById('id01').style.display='block'
+        document.getElementById("title").innerHTML = "Tie game";
                  l = 1;
                  h = 0;
                  r = 1;
