@@ -286,5 +286,5 @@ h = 0;
 r = 1;
 clearBoard()
 winner = ""
-document.getElementById('id01').style.display='block'
+document.getElementById('id01').style.display=''
 }
