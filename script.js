@@ -318,8 +318,9 @@ document.getElementById('id01').style.display=''
 }
 function multiplayer()
 {
+alert("Confirmation that this is working")
 playAgain()
-multiplayer = "on"
+multiplayer = "on"   
 }
 window.onload = function()
 {
