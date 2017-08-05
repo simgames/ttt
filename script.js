@@ -33,14 +33,12 @@ for (let i = 1; i <= 3; i++) {
                   if(r == 3 && h !=9)
                    {
                        alert(multiplayerTurn)
-                   if(mutiplayerTurn == "X")
+                   if(multiplayerTurn == "X")
                    {
                     multiplayerTurn = "O";
-                       alert("BUDDY");
                    }
                    else
                    {
-                       alert("LOL")
                     multiplayerTurn = "X";
                    }
              }
