@@ -32,7 +32,7 @@ for (let i = 1; i <= 3; i++) {
                 checkWinner()
                   if(r == 3 && h !=9)
                    {
-                       alert("Great");
+                       alert(multiplayerTurn)
                    if(mutiplayerTurn == "X")
                    {
                     multiplayerTurn = "O";
