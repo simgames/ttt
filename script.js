@@ -6,7 +6,6 @@ var multiplayerTurn = "X";
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
-            alert(multiplayer);
         if(multiplayer == "off")
         {
             if (this.innerHTML == "")
@@ -27,13 +26,13 @@ for (let i = 1; i <= 3; i++) {
           {
               if (this.innerHTML == "")
             {
-                alert(multiplayerTurn)
                 this.innerHTML = multiplayerTurn;
                 r = 1
                 h += 1
                 checkWinner()
                   if(r == 3 && h !=9)
                    {
+                       alert("Great");
                    if(mutiplayerTurn == "X")
                    {
                     multiplayerTurn = "O";
