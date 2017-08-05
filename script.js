@@ -40,7 +40,7 @@ for (let i = 1; i <= 3; i++) {
                    }
                    else
                    {
-                       alert("LOL)
+                       alert("LOL")
                     multiplayerTurn = "X";
                    }
              }
