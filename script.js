@@ -320,8 +320,8 @@ document.getElementById('id01').style.display=''
 }
 function multiPlayer()
 {
+playAgain() 
 multiplayer = "on"
-playAgain()   
 }
 window.onload = function()
 {
