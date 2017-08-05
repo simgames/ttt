@@ -25,7 +25,6 @@ for (let i = 1; i <= 3; i++) {
           }
           else
           {
-              alert("HOUSTON TOMORROW")
               if (this.innerHTML == "")
             {
                 this.innerHTML = multiplayerTurn;
@@ -37,6 +36,7 @@ for (let i = 1; i <= 3; i++) {
                    if(mutiplayerTurn == "X")
                    {
                     multiplayerTurn = "O";
+                       alert("BUDDY");
                    }
                    else
                    {
