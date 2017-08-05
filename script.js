@@ -320,6 +320,7 @@ function multiPlayer()
 {
 playAgain() 
 multiplayer = "on"
+multiplayerTurn = "X"
 }
 window.onload = function()
 {
