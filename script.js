@@ -1,9 +1,13 @@
 var r = 1
 var l = 1
 var h = 0
+var multiplayer = "off"
+var multiplayerTurn = "X";
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
+        if(multiplayer == "off")
+        {
             if (this.innerHTML == "")
             {
                 this.innerHTML = 'X';
@@ -12,10 +16,33 @@ for (let i = 1; i <= 3; i++) {
                 checkWinner()
                   if(r == 3 && h !=9)
                    {
+                       
                     computerTurn()
                    }
                 
             }
+          }
+          else
+          {
+              if (this.innerHTML == "")
+            {
+                this.innerHTML = multiplayerTurn;
+                r = 1
+                h += 1
+                checkWinner()
+                  if(r == 3 && h !=9)
+                   {
+                   if(mutiplayerTurn == "X")
+                   {
+                    multiplayerTurn = "O";
+                   }
+                   else
+                   {
+                    multiplayerTurn = "X";
+                   }
+             }
+            }
+          }
         }
     }
 }
@@ -281,12 +308,18 @@ document.getElementById("r" + i + "c" + l).innerHTML = ""
 }
 function playAgain()
 {
+multiplayer = "off"
 l = 1;
 h = 0;
 r = 1;
 clearBoard()
 winner = ""
 document.getElementById('id01').style.display=''
+}
+function multiplayer()
+{
+playAgain()
+multiplayer = "on"
 }
 window.onload = function()
 {
