@@ -27,6 +27,7 @@ for (let i = 1; i <= 3; i++) {
           {
               if (this.innerHTML == "")
             {
+                alert(multiplayerTurn)
                 this.innerHTML = multiplayerTurn;
                 r = 1
                 h += 1
