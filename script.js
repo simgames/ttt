@@ -318,7 +318,7 @@ document.getElementById('id01').style.display=''
 }
 function multiPlayer()
 {
-alert("Confirmation that this is working")
+multiplayer = "on"
 playAgain()   
 }
 window.onload = function()
