@@ -1,6 +1,7 @@
 var r = 1
 var l = 1
 var h = 0
+var level = "easy"
 var multiplayer = "off"
 var multiplayerTurn = "X";
 for (let i = 1; i <= 3; i++) {
@@ -49,6 +50,8 @@ for (let i = 1; i <= 3; i++) {
 function computerTurn()
 { 
     r = 1
+    if(level == "easy")
+    {
     var result = Math.floor(Math.random() * 9 + 1)
     if (result == 1)
     {
@@ -175,6 +178,47 @@ function computerTurn()
         {
             computerTurn()
         }
+    }
+   }
+    else if(level == "medium")
+    {
+    var letterxr1 = 0;
+    var letteror1 = 0;
+    var letterxc1 = 0;
+    var letteroc1 = 0;
+    var letterxd1 = 0;
+    var letterod1 = 0;
+    var letterxd2 = 0;
+    var letterod2 = 0;
+for(i=1;i<4;i++)
+{
+if (document.getElementById("r" + i + "c" + r).innerHTML == "X" || document.getElementById("r" + i + "c" + r).innerHTML == "O")
+        {
+            if (document.getElementById("r" + i + "c" + r).innerHTML == "X")
+            {
+                letterxr1 += 1
+              
+            }
+            else
+            {
+                letteror1 += 1
+            }
+        }
+}
+        if(letterxr1 == 2)
+        {
+        for(i=1;i<4;i++)
+        {
+        if(document.getElementById("r" + i + "c" + r).innerHTML == " ")
+        {
+            this.innerHTML = "O"
+        }
+        }
+        }
+    }
+    else if(level == "difficult")
+    {
+
     }
 }
 function checkWinner()
