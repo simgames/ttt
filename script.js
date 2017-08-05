@@ -319,7 +319,7 @@ document.getElementById('id01').style.display=''
 function multiPlayer()
 {
 alert("Confirmation that this is working")
-
+playAgain()   
 }
 window.onload = function()
 {
