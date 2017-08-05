@@ -316,7 +316,7 @@ clearBoard()
 winner = ""
 document.getElementById('id01').style.display=''
 }
-function multiplayer()
+function multiPlayer()
 {
 alert("Confirmation that this is working")
 playAgain()
