@@ -179,7 +179,8 @@ function clearBoard() {
     }
 }
 
-function playAgain() {
+function playAgain(diff) {
+    level = diff;
     multiplayer = "off";
     l = 1;
     h = 0;
@@ -190,7 +191,7 @@ function playAgain() {
 }
 
 function multiPlayer() {
-    playAgain();
+    playAgain(diff);
     multiplayer = "on";
     turn = "X";
 }
