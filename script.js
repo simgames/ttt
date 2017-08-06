@@ -188,12 +188,12 @@ function playAgain(diff) {
     clearBoard();
     winner = "";
     document.getElementById('id01').style.display = '';
+    turn = "X";
 }
 
 function multiPlayer() {
-    playAgain(diff);
+    playAgain("easy");
     multiplayer = "on";
-    turn = "X";
 }
 window.onload = function() {
     document.getElementById('id01').style.display = 'block';
