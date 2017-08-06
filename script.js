@@ -146,24 +146,24 @@ function checkWinner() {
     }
 
 
-
-    if (winner == "X") {
-        document.getElementById('id01').style.display = 'block';
-        document.getElementById("title").innerHTML = "X wins";
-    }
-    if (winner == "O") {
-        document.getElementById('id01').style.display = 'block';
-        document.getElementById("title").innerHTML = "O wins";
-    }
-    if (winner == "") {
-        if (r != 3) {
-            r += 1
-            checkWinner()
-        } else {
-            if (h == 9) {
+    switch(winner) {
+        case "X": {
+            document.getElementById('id01').style.display = 'block';
+            document.getElementById("title").innerHTML = "X wins";
+            break;
+        }
+        case "O": {
+            document.getElementById('id01').style.display = 'block';
+            document.getElementById("title").innerHTML = "O wins";
+            break;
+        }
+        default: {
+            if (r != 3) {
+                r += 1;
+                checkWinner();
+            } else if (h == 9) {
                 document.getElementById('id01').style.display = 'block';
                 document.getElementById("title").innerHTML = "Tie";
-
             }
         }
     }
