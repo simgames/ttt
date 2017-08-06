@@ -37,6 +37,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.54);
+    outline: 0;
 }
 button:hover {
     box-shadow：0 4px 8px rgba(0,0,0,0.54);
