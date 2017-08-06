@@ -42,96 +42,14 @@ for (let i = 1; i <= 3; i++) {
 function computerTurn() {
     r = 1
     if (level == "easy") {
-        var result = Math.floor(Math.random() * 9 + 1)
-        if (result == 1) {
-            var box = document.getElementById("r1c1")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner();
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 2) {
-            var box = document.getElementById("r2c1")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner();
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 3) {
-            var box = document.getElementById("r3c1")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner();
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 4) {
-            var box = document.getElementById("r1c2")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner();
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 5) {
-            var box = document.getElementById("r2c2")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner()
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 6) {
-            var box = document.getElementById("r3c2")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner()
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 7) {
-            var box = document.getElementById("r1c3")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner()
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 8) {
-            var box = document.getElementById("r2c3")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner()
-            } else {
-                computerTurn()
-            }
-        }
-        if (result == 9) {
-            var box = document.getElementById("r3c3")
-            if (box.innerHTML == "") {
-                box.innerHTML = "O";
-                h += 1
-                checkWinner();
-            } else {
-                computerTurn()
-            }
+        var result = Math.floor(Math.random() * 9);
+        var box = document.getElementById(grid_n[result]);
+        if (box.innerHTML == "") {
+            box.innerHTML = "O";
+            h += 1;
+            checkWinner();
+        } else {
+            computerTurn()
         }
     } else if (level == "medium") {
         var letterxr1 = 0;
