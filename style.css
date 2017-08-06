@@ -5,6 +5,7 @@
     background: #EEE;
     width: 85%;
     min-width: 500px;
+    max-width: 100%;
     height: 85vw;
     max-height: 85vh;
     font-family: sans-serif;
