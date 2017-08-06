@@ -36,9 +36,10 @@ button {
     border-radius: 2px;
     cursor: pointer;
     font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.54);
 }
 button:hover {
-    box-shadow：0 2px 4px rgba(0,0,0,0.54);
+    box-shadow：0 4px 8px rgba(0,0,0,0.54);
 }
 /* Extra styles for the cancel button */
 /* Center the image and position the close button */
@@ -70,6 +71,7 @@ span.psw {
     margin:  auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
 }
 #title {
     font-family: 'Roboto', sans-serif;
