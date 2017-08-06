@@ -195,7 +195,5 @@ function multiPlayer() {
     turn = "X";
 }
 window.onload = function() {
-    document.getElementById("enter").innerHTML = "Play Computer";
-    document.getElementById("title").innerHTML = "Tic Tac Toe";
     document.getElementById('id01').style.display = 'block';
 }
