@@ -149,11 +149,11 @@ function checkWinner() {
 
     if (winner == "X") {
         document.getElementById('id01').style.display = 'block';
-        document.getElementById("title").innerHTML = "X won!!!";
+        document.getElementById("title").innerHTML = "X wins";
     }
     if (winner == "O") {
         document.getElementById('id01').style.display = 'block';
-        document.getElementById("title").innerHTML = "O won!!!";
+        document.getElementById("title").innerHTML = "O wins";
     }
     if (winner == "") {
         if (r != 3) {
@@ -162,7 +162,7 @@ function checkWinner() {
         } else {
             if (h == 9) {
                 document.getElementById('id01').style.display = 'block';
-                document.getElementById("title").innerHTML = "Tie game";
+                document.getElementById("title").innerHTML = "Tie";
 
             }
         }
