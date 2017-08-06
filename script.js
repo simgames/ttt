@@ -41,7 +41,7 @@ for (let i = 1; i <= 3; i++) {
 
 function computerTurn() {
     r = 1
-    if (level == "easy") {
+    if (level === "easy") {
         var result = Math.floor(Math.random() * 9);
         var box = document.getElementById(grid_n[result]);
         if (box.innerHTML == "") {
@@ -51,7 +51,7 @@ function computerTurn() {
         } else {
             computerTurn()
         }
-    } else if (level == "medium") {
+    } else if (level === "medium") {
         var letterxr1 = 0;
         var letteror1 = 0;
         var letterxc1 = 0;
@@ -77,7 +77,7 @@ function computerTurn() {
                 }
             }
         }
-    } else if (level == "difficult") {
+    } else if (level === "difficult") {
 
     }
 }
