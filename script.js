@@ -164,6 +164,7 @@ function computerTurn() {
 }
 
 function checkWinner() {
+    // TODO: Turn this into an array
     var letterxr1 = 0;
     var letteror1 = 0;
     var letterxc1 = 0;
