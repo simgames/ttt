@@ -180,12 +180,12 @@ function checkWinner() {
             if (document.getElementById("r" + i + "c" + r).innerHTML == "X") {
                 letterxr1 += 1
                 if (letterxr1 == 3) {
-                    winner = "X"
+                    winner = "X";
                 }
             } else {
                 letteror1 += 1
                 if (letteror1 == 3) {
-                    winner = "O"
+                    winner = "O";
                 }
             }
         }
@@ -193,26 +193,26 @@ function checkWinner() {
             if (document.getElementById("r" + r + "c" + i).innerHTML == "X") {
                 letterxc1 += 1
                 if (letterxc1 == 3) {
-                    winner = "X"
+                    winner = "X";
                 }
             } else {
                 letteroc1 += 1
                 if (letteroc1 == 3) {
-                    winner = "O"
+                    winner = "O";
                 }
             }
         }
 
         if (document.getElementById("r" + i + "c" + i).innerHTML == "X" || document.getElementById("r" + i + "c" + i).innerHTML == "O") {
             if (document.getElementById("r" + i + "c" + i).innerHTML == "X") {
-                letterxd1 += 1
+                letterxd1 += 1;
                 if (letterxd1 == 3) {
-                    winner = "X"
+                    winner = "X";
                 }
             } else {
                 letterod1 += 1
                 if (letterod1 == 3) {
-                    winner = "O"
+                    winner = "O";
                 }
             }
         }
@@ -220,20 +220,20 @@ function checkWinner() {
     }
     if (document.getElementById("r" + 3 + "c" + 1).innerHTML == "X" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "X" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "X" || document.getElementById("r" + 3 + "c" + 1).innerHTML == "O" && document.getElementById("r" + 2 + "c" + 2).innerHTML == "O" && document.getElementById("r" + 1 + "c" + 3).innerHTML == "O") {
         if (document.getElementById("r" + 3 + "c" + 1).innerHTML == "X") {
-            winner = "X"
+            winner = "X";
         } else {
-            winner = "O"
+            winner = "O";
         }
     }
 
 
 
     if (winner == "X") {
-        document.getElementById('id01').style.display = 'block'
+        document.getElementById('id01').style.display = 'block';
         document.getElementById("title").innerHTML = "X won!!!";
     }
     if (winner == "O") {
-        document.getElementById('id01').style.display = 'block'
+        document.getElementById('id01').style.display = 'block';
         document.getElementById("title").innerHTML = "O won!!!";
     }
     if (winner == "") {
@@ -242,7 +242,7 @@ function checkWinner() {
             checkWinner()
         } else {
             if (h == 9) {
-                document.getElementById('id01').style.display = 'block'
+                document.getElementById('id01').style.display = 'block';
                 document.getElementById("title").innerHTML = "Tie game";
 
             }
@@ -252,28 +252,28 @@ function checkWinner() {
 
 function clearBoard() {
     for (i = 1; i < 4; i++) {
-        document.getElementById("r" + i + "c" + l).innerHTML = ""
+        document.getElementById("r" + i + "c" + l).innerHTML = "";
     }
     if (l != 3) {
-        l += 1
-        clearBoard()
+        l += 1;
+        clearBoard();
     }
 }
 
 function playAgain() {
-    multiplayer = "off"
+    multiplayer = "off";
     l = 1;
     h = 0;
     r = 1;
-    clearBoard()
-    winner = ""
-    document.getElementById('id01').style.display = ''
+    clearBoard();
+    winner = "";
+    document.getElementById('id01').style.display = '';
 }
 
 function multiPlayer() {
-    playAgain()
-    multiplayer = "on"
-    multiplayerTurn = "X"
+    playAgain();
+    multiplayer = "on";
+    multiplayerTurn = "X";
 }
 window.onload = function() {
     document.getElementById("enter").innerHTML = "Play Computer";
