@@ -4,7 +4,7 @@ var h = 0;
 var level = "easy";
 var multiplayer = "off";
 var turn = "X"; /* Who's turn it is */
-const grid_n = ["r1c1", "r1c2", "r1c3", "r2c1", "r2c2", "r2c3", "r3c1", "r3c2", "r3c3"];
+const grid_n = ["r1c1", "r1c2", "r1c3", "r2c1", "r2c2", "r2c3", "r3c1", "r3c2", "r3c3"]; /* Assigns each box a number 0-8; use grid_n[n] to get the id of the box that is represented by the number */
 
 
 for (let i = 1; i <= 3; i++) {
