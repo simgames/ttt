@@ -1,9 +1,11 @@
 var r = 1;
 var l = 1;
 var h = 0;
-var level = "easy"
-var multiplayer = "off"
+var level = "easy";
+var multiplayer = "off";
 var turn = "X"; /* Who's turn it is */
+const grid_n = ["r1c1", "r1c2", "r1c3", "r2c1", "r2c2", "r2c3", "r3c1", "r3c2", "r3c3"];
+
 
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
@@ -15,16 +17,14 @@ for (let i = 1; i <= 3; i++) {
                     h += 1
                     checkWinner()
                     if (r == 3 && h != 9) {
-
                         computerTurn()
                     }
-
                 }
             } else {
                 if (this.innerHTML == "") {
                     this.innerHTML = turn;
-                    r = 1
-                    h += 1
+                    r = 1;
+                    h += 1;
                     checkWinner()
                     if (r == 3 && h != 9) {
                         if (turn == "X") {
