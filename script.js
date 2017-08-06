@@ -1,9 +1,10 @@
-var r = 1
-var l = 1
-var h = 0
+var r = 1;
+var l = 1;
+var h = 0;
 var level = "easy"
 var multiplayer = "off"
-var multiplayerTurn = "X";
+var turn = "X"; /* Who's turn it is */
+
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
@@ -21,15 +22,15 @@ for (let i = 1; i <= 3; i++) {
                 }
             } else {
                 if (this.innerHTML == "") {
-                    this.innerHTML = multiplayerTurn;
+                    this.innerHTML = turn;
                     r = 1
                     h += 1
                     checkWinner()
                     if (r == 3 && h != 9) {
-                        if (multiplayerTurn == "X") {
-                            multiplayerTurn = "O";
+                        if (turn == "X") {
+                            turn = "O";
                         } else {
-                            multiplayerTurn = "X";
+                            turn = "X";
                         }
                     }
                 }
@@ -273,7 +274,7 @@ function playAgain() {
 function multiPlayer() {
     playAgain();
     multiplayer = "on";
-    multiplayerTurn = "X";
+    turn = "X";
 }
 window.onload = function() {
     document.getElementById("enter").innerHTML = "Play Computer";
