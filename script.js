@@ -19,8 +19,11 @@ for (let i = 1; i <= 3; i++) {
                     checkWinner();
                     checkWinner();
                     if (r == 3 && h != 9) {
-                        computerTurn();
-                        checkWinner();
+                        // Delay before computer goes
+                        setTimeout(function() {
+                            computerTurn();
+                            checkWinner();
+                        }, 1000);
                     }
                 }
             } else {
