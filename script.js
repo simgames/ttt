@@ -13,11 +13,12 @@ for (let i = 1; i <= 3; i++) {
             if (multiplayer == "off") {
                 if (this.innerHTML == "") {
                     this.innerHTML = 'X';
-                    r = 1
-                    h += 1
-                    checkWinner()
+                    r = 1;
+                    h += 1;
+                    checkWinner();
                     if (r == 3 && h != 9) {
-                        computerTurn()
+                        computerTurn();
+                        checkWinner();
                     }
                 }
             } else {
