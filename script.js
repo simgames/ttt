@@ -11,7 +11,7 @@ for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
         document.getElementById('r' + i + 'c' + j).onclick = function() {
             if (multiplayer == "off") {
-                if (this.innerHTML == "") {
+                if (this.innerHTML == "" && turn === 'X') {
                     this.innerHTML = 'X';
                     r = 1;
                     h += 1;
@@ -19,11 +19,13 @@ for (let i = 1; i <= 3; i++) {
                     checkWinner();
                     checkWinner();
                     if (r == 3 && h != 9) {
+                        turn = 'O';
                         // Delay before computer goes
                         setTimeout(function() {
                             computerTurn();
                             checkWinner();
-                        }, 1000);
+                            turn = 'X';
+                        }, 500);
                     }
                 }
             } else {
@@ -55,7 +57,7 @@ function computerTurn() {
             h += 1;
             checkWinner();
         } else {
-            computerTurn()
+            computerTurn();
         }
     } else if (level === "medium") {
         let highestWeight = 0;
