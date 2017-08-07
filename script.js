@@ -6,6 +6,7 @@ var multiplayer = "off";
 var turn = "X"; /* Who's turn it is */
 const grid_n = ["r1c1", "r1c2", "r1c3", "r2c1", "r2c2", "r2c3", "r3c1", "r3c2", "r3c3"]; /* Assigns each box a number 0-8; use grid_n[n] to get the id of the box that is represented by the number */
 const weights = [2, 1, 2, 1, 3, 1, 2, 1, 2]; // The # of lines; corners have more than edges; centers have more than corners, so edges = 1, corners = 2, centers = 3
+var game_is_on = false;
 
 for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 3; j++) {
@@ -15,8 +16,6 @@ for (let i = 1; i <= 3; i++) {
                     this.innerHTML = 'X';
                     r = 1;
                     h += 1;
-                    checkWinner();
-                    checkWinner();
                     checkWinner();
                     if (r == 3 && h != 9) {
                         turn = 'O';
@@ -78,6 +77,8 @@ function computerTurn() {
 }
 
 function checkWinner() {
+    if(game_is_on) return; // if game is on
+    
     // TODO: Turn this into an array
     var letterxr1 = 0;
     var letteror1 = 0;
@@ -144,9 +145,11 @@ function checkWinner() {
         case "X": {
             document.getElementById('id01').style.display = 'block';
             document.getElementById("title").innerHTML = "X wins";
+            game_is_on = false;
             break;
         }
         case "O": {
+            game_is_on = false;
             document.getElementById('id01').style.display = 'block';
             document.getElementById("title").innerHTML = "O wins";
             break;
@@ -181,8 +184,9 @@ function playAgain(diff) {
     r = 1;
     clearBoard();
     winner = "";
-    document.getElementById('id01').style.display = '';
+    document.getElementById('id01').style.display = 'none';
     turn = "X";
+    game_is_on = true;
 }
 
 function multiPlayer() {
