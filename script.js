@@ -16,6 +16,8 @@ for (let i = 1; i <= 3; i++) {
                     r = 1;
                     h += 1;
                     checkWinner();
+                    checkWinner();
+                    checkWinner();
                     if (r == 3 && h != 9) {
                         computerTurn();
                         checkWinner();
