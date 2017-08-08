@@ -17,7 +17,7 @@ for (let i = 1; i <= 3; i++) {
                     r = 1;
                     h += 1;
                     checkWinner();
-                    if (/*r == 3 && h != 9*/true) {
+                    if (/*r == 3 && */h != 9) {
                         turn = 'O';
                         // Delay before computer goes
                         setTimeout(function() {
