@@ -17,7 +17,7 @@ for (let i = 1; i <= 3; i++) {
                     r = 1;
                     h += 1;
                     checkWinner();
-                    if (/*r == 3 && */h != 9) {
+                    if (/*r == 3 && */h != 9 && game_is_on) {
                         turn = 'O';
                         // Delay before computer goes
                         setTimeout(function() {
@@ -47,7 +47,7 @@ for (let i = 1; i <= 3; i++) {
 }
 
 function computerTurn() {
-    r = 1
+    r = 1;
     if (level === "easy") {
         var result = Math.floor(Math.random() * 9);
         var box = document.getElementById(grid_n[result]);
