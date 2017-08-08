@@ -77,7 +77,7 @@ function computerTurn() {
 }
 
 function checkWinner() {
-    if(game_is_on) return; // if game is on
+    if(!game_is_on) return; // if game is on
     
     // TODO: Turn this into an array
     var letterxr1 = 0;
