@@ -48,31 +48,32 @@ for (let i = 1; i <= 3; i++) {
 
 function computerTurn() {
     r = 1;
-    if (level === "easy") {
-        var result = Math.floor(Math.random() * 9);
-        var box = document.getElementById(grid_n[result]);
-        if (box.innerHTML === "") {
-            box.innerHTML = "O";
-            h += 1;
-            checkWinner();
-        } else {
-            computerTurn();
-        }
-    } else if (level === "medium") {
-        let highestWeight = 0;
-        let highestWeightIndex = -1;
-        
-        // Find index with the highest weight
-        for(let i = 0; i < weights.length; i++) {
-            if(weights[i] > highestWeight && document.getElementById(grid_n[i]).innerHTML === "") {
-                highestWeight = weights[i];
-                highestWeightIndex = i;
+    switch(level) {
+        case "easy": {
+            var result = Math.floor(Math.random() * 9);
+            var box = document.getElementById(grid_n[result]);
+            if (box.innerHTML === "") {
+                box.innerHTML = "O";
+                h += 1;
+                checkWinner();
+            } else {
+                computerTurn();
             }
         }
-        
-        document.getElementById(grid_n[highestWeightIndex]).innerHTML = "O";
-    } else if (level === "difficult") {
+        break;
+        case "medium": {
+            let highestWeight = 0;
+            let highestWeightIndex = -1;
 
+            // Find index with the highest weight
+            for(let i = 0; i < weights.length; i++) {
+                if(weights[i] > highestWeight && document.getElementById(grid_n[i]).innerHTML === "") {
+                    highestWeight = weights[i];
+                    highestWeightIndex = i;
+                }
+            }  
+            document.getElementById(grid_n[highestWeightIndex]).innerHTML = "O";
+        }
     }
 }
 
